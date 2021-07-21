@@ -17,23 +17,23 @@
 		<% } %>
 		<form action="/noticias/salvar" method="post">
 			<label>Título</label>
-			<input type="text" name="titulo" id="title" value="" placeholder="Título da notícia">
+			<input type="text" name="titulo" id="title" value="<%= noticia.titulo %>" placeholder="Título da notícia">
 			<br>
 
 			<label>Resumo</label>
-			<input type="text" name="resumo" id="resumo" value="" placeholder="Resumo da notícia">
+			<input type="text" name="resumo" id="resumo" value="<%= noticia.resumo %>" placeholder="Resumo da notícia">
 			<br>
 
 			<label>Data</label>
-			<input type="date" name="datanoticia" id="datanoticia" value="" placeholder="Data da notícia">
+			<input type="date" name="datanoticia" id="datanoticia" value="<%= noticia.datanoticia %>" placeholder="Data da notícia">
 			<br>
 
 			<label>Autor</label>
-			<input type="text" name="autor" id="autor" value="" placeholder="Autor da notícia">
+			<input type="text" name="autor" id="autor" value="<%= noticia.autor %>" placeholder="Autor da notícia">
 			<br>
 
 			<label>Notícia</label>
-			<textarea name="noticia" id="noticia" rows="5" cols="30"></textarea>
+			<textarea name="noticia" id="noticia" rows="5" cols="30" value="<%= noticia.noticia %>"></textarea>
 			<br>
 			<input type="submit" value="Enviar">
 		</form>
