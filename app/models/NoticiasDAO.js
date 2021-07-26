@@ -7,9 +7,10 @@ NoticiasDAO.prototype.getNoticias = function(callback){
     this._conn.query(sql, callback);
 }
 
-NoticiasDAO.prototype.getNoticia = function(callback){
-    var sql = "SELECT * FROM noticias WHERE id = '1'";
-    this._conn.query(sql, callback);
+NoticiasDAO.prototype.getNoticia = function(id, callback){
+	    console.log(id)
+
+    this._conn.query("SELECT * FROM noticias WHERE id = ? ", id, callback);
 }
 
 NoticiasDAO.prototype.setNoticia = function(noticia, callback){

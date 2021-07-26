@@ -6,6 +6,7 @@
 		<title>Portal de notícias</title>
 		
 		<!-- JQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="js/jquery-2.2.1.js"></script>
 
 		<!-- bootstrap - link cdn -->
@@ -47,7 +48,7 @@
 	    		<div class="col-md-8">
 	    			<div class="noticia_wrapper">
 		    			<span class="noticia_autor"><%= noticias[0].autor%></span>
-		    			<a href="/noticia" class="noticia_titulo"><%= noticias[0].titulo%></a>
+		    			<a href="/noticia?id=<%= noticias[0].id %>" class="noticia_titulo"><%= noticias[0].titulo%></a>
 		    			<span class="noticia_data"><%= noticias[0].datanoticia%></span>
 		    			<br />
 		    			<p class="noticia_resumo">
@@ -59,7 +60,7 @@
 	    		<div class="col-md-4">
 	    			<div class="noticia_wrapper">
 		    			<span class="noticia_autor"><%= noticias[1].autor%></span>
-		    			<a href="/noticia" class="noticia_titulo"><%= noticias[1].titulo%></a>
+		    			<a href="/noticia?id=<%= noticias[1].id %>" class="noticia_titulo"><%= noticias[1].titulo%></a>
 		    			<span class="noticia_data"><%= noticias[1].datanoticia%></span>
 
 		    			<br />
@@ -76,7 +77,7 @@
 	    		<div class="col-md-4">
 	    			<div class="noticia_wrapper">
 		    			<span class="noticia_autor"><%= noticias[2].autor%></span>
-		    			<a href="/noticia" class="noticia_titulo"><%= noticias[2].titulo%></a>
+		    			<a href="/noticia?id=<%= noticias[2].id %>" class="noticia_titulo"><%= noticias[2].titulo%></a>
 		    			<span class="noticia_data"><%= noticias[2].datanoticia%></span>
 		    			<br />
 		    			<p class="noticia_resumo">
@@ -90,7 +91,7 @@
 	    		<div class="col-md-4">
 	    			<div class="noticia_wrapper">
 		    			<span class="noticia_autor"><%= noticias[3].autor%></span>
-		    			<a href="/noticia" class="noticia_titulo"><%= noticias[3].titulo%></a>
+		    			<a href="/noticia?id=<%= noticias[3].id %>" class="noticia_titulo"><%= noticias[3].titulo%></a>
 		    			<span class="noticia_data"><%= noticias[3].datanoticia%></span>
 
 		    			<br />
@@ -105,7 +106,7 @@
 	    		<div class="col-md-4">
 	    			<div class="noticia_wrapper">
 		    			<span class="noticia_autor"><%= noticias[4].autor%></span>
-		    			<a href="/noticia" class="noticia_titulo"><%= noticias[4].titulo%></a>
+		    			<a href="/noticia?id=<%= noticias[4].id %>" class="noticia_titulo"><%= noticias[4].titulo%></a>
 		    			<span class="noticia_data"><%= noticias[4].datanoticia%></span>
 
 		    			<br />
@@ -118,12 +119,10 @@
 	    	</div>
 
 	    	<div class="row ver_mais">
-	    		<button type="button" class="btn btn-default"><a href="noticias.html">Ver todas as notícias</a></button>
+	    		<button type="button" class="btn btn-default"><a href="/noticias">Ver todas as notícias</a></button>
 	    	</div>
 
 	    </div>
-	
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
 	</body>
 </html>
